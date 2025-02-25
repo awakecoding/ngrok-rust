@@ -31,7 +31,7 @@ use hyper::{
 };
 use once_cell::sync::Lazy;
 use proxy_protocol::ProxyHeader;
-use rustls::crypto::ring as provider;
+use rustls::crypto::aws_lc_rs as provider;
 #[cfg(feature = "hyper")]
 use tokio::io::{
     AsyncRead,
